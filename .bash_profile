@@ -21,3 +21,4 @@ export PATH=/userbin:$PATH
 
 
 test -r ~/.bashrc && . ~/.bashrc
+PS1="\[\e[0;32m\][\t]  \W $ \[\033[0m\]"
