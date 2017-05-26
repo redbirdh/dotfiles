@@ -18,6 +18,7 @@ export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
 
 # Add userbin folder
 export PATH=/userbin:$PATH
+export PATH=/usr/local/bin:$PATH
 
 
 test -r ~/.bashrc && . ~/.bashrc
