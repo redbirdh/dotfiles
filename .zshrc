@@ -3,7 +3,8 @@ export LANG=ja_JP.UTF-8
 autoload -Uz colors
 colors
 
-PROMPT="%{${fg[green]}%}[zsh] %~ $ %{${reset_color}%}"
+PROMPT="%{${fg[green]}%}[zsh:%n@%m] %c $ %{${reset_color}%}"
+RPROMPT="%{${fg[green]}%}[%~]%{${reset_color}%}"
 
 autoload -Uz compinit
 compinit
