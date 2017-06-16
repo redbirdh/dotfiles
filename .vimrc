@@ -1,3 +1,4 @@
+execute pathogen#infect()
 set fenc=utf-8
 set nobackup
 set noswapfile
@@ -27,6 +28,8 @@ set wildmode=list:longest
 
 " tab系
 set tabstop=4
+set autoindent
+set expandtab
 set shiftwidth=4
 set list listchars=tab:\-\-
 hi SpecialKey guibg=NONE guifg=Gray40
