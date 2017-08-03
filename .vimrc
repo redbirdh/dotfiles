@@ -28,9 +28,11 @@ set wildmode=list:longest
 
 " tab系
 set tabstop=4
-set autoindent
-set expandtab
 set shiftwidth=4
+set softtabstop=4
+set autoindent
+set smartindent
+set expandtab
 set list listchars=tab:\-\-
 hi SpecialKey guibg=NONE guifg=Gray40
 
