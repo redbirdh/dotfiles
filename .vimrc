@@ -8,13 +8,13 @@ set showcmd
 
 " 見た目系
 set t_Co=256
-" solarized用の設定
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-set background=dark
-
 syntax enable
 colorscheme solarized
+" solarized用の設定
+let g:solarized_termcolors=256
+" let g:solarized_termtrans=1
+set background=dark
+
 
 set number
 set cursorline
