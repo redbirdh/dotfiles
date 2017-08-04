@@ -10,3 +10,6 @@
 [submodule ".vim/bundle/auto-pairs"]
 	path = .vim/bundle/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule ".vim/bundle/vim-material"]
+	path = .vim/bundle/vim-material
+	url = https://github.com/hzchirs/vim-material.git
