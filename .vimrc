@@ -57,3 +57,8 @@ for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
 endfor
 
 imap <expr> <TAB> pumvisible() ? "\<Down>" : "\<Tab>"
+
+" indentLine
+let g:indentLine_color_term = 111
+let g:indentLine_char = '¦'
+
