@@ -1,10 +1,9 @@
 export LANG=ja_JP.UTF-8
 
-autoload -Uz colors
-colors
+autoload -Uz colors && colors
 
-PROMPT="%{${fg[green]}%}[zsh:%n@%m] %c $ %{${reset_color}%}"
-RPROMPT="%{${fg[green]}%}[%~]%{${reset_color}%}"
+PROMPT="%{${fg_bold[green]}%}[zsh:%n] %c $ %{${reset_color}%}"
+# RPROMPT="%{${fg[green]}%}[%~]%{${reset_color}%}"
 
 autoload -Uz compinit
 compinit
@@ -12,6 +11,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' ignore-parents parent pwd ..
 
 setopt print_eight_bit
+setopt prompt_subst
 setopt auto_cd
 
 case ${OSTYPE} in
