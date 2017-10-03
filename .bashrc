@@ -1,4 +1,4 @@
-PS1="\[\e[32m\][\u@\W] $ \[\e[0m\]"
+PS1="\[\e[1;32m\][\u@\W] $ \[\e[0m\]"
 
 alias ls='ls -G -h'
 alias edit="open -a /Applications/Atom.app"
