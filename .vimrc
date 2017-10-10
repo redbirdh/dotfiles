@@ -1,4 +1,6 @@
 execute pathogen#infect()
+
+let OSTYPE = system('uname')
 set fenc=utf-8
 set nobackup
 set noswapfile
@@ -8,12 +10,12 @@ set showcmd
 
 " 見た目系
 syntax enable
-if has('mac')
-solarized用の設定
-    colorscheme vim-solarized
+if OSTYPE == "Darwin\n"
+    "solarized用の設定
     set background=dark
     let g:solarized_termcolors=256
     let g:solarized_termtrans=1
+    colorscheme solarized
     " ここまで
 else
     colorscheme vim-material
