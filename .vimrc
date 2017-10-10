@@ -8,12 +8,16 @@ set showcmd
 
 " 見た目系
 syntax enable
-" solarized用の設定
-set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-" ここまで
-colorscheme solarized
+if has('mac')
+solarized用の設定
+    colorscheme vim-solarized
+    set background=dark
+    let g:solarized_termcolors=256
+    let g:solarized_termtrans=1
+    " ここまで
+else
+    colorscheme vim-material
+endif
 
 
 set number
