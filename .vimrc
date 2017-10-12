@@ -14,7 +14,7 @@ if OSTYPE == "Darwin\n"
     "solarized用の設定
     set background=dark
     let g:solarized_termcolors=256
-    let g:solarized_termtrans=1
+    "let g:solarized_termtrans=1
     colorscheme solarized
     " ここまで
 else
