@@ -37,3 +37,5 @@ case ${OSTYPE} in
 		;;
 esac
 
+# alias
+alias ll='ls -alh'
