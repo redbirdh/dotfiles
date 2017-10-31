@@ -37,5 +37,5 @@ case ${OSTYPE} in
 		;;
 esac
 
-aylias p3='python3'
+alias p3='python3'
 export GIT_EDITOR=vim
