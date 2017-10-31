@@ -18,7 +18,7 @@ if OSTYPE == "Darwin\n"
     colorscheme solarized
     " ここまで
 else
-    colorscheme vim-material
+    colorscheme molokai
 endif
 
 
