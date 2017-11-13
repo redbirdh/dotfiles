@@ -1,1 +1,1 @@
-/Users/vader/dotfiles/.vim
+/home/redbird/dotfiles/.vim

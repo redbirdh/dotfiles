@@ -1,4 +1,6 @@
 execute pathogen#infect()
+
+let OSTYPE = system('uname')
 set fenc=utf-8
 set nobackup
 set noswapfile
@@ -13,7 +15,16 @@ set background=dark
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 " ここまで
-colorscheme molokai
+if OSTYPE == "Darwin\n"
+    "solarized用の設定
+    set background=dark
+    let g:solarized_termcolors=256
+    "let g:solarized_termtrans=1
+    colorscheme solarized
+    " ここまで
+else
+    colorscheme molokai
+endif
 
 
 set number

@@ -1,0 +1,1 @@
+/home/redbird/dotfiles/.vim/bundle/vim-material/colors/vim-material.vim
