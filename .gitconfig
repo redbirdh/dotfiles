@@ -6,6 +6,9 @@
 [alias]
     graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
 [http]
+[https]
+[url "https://"]
+[http]
 	proxy = http://proxyr.drm.doshisha.ac.jp:8080
 [https]
 	proxy = https://proxyr.drm.doshisha.ac.jp:8080
