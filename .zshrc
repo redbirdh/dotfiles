@@ -37,5 +37,10 @@ case ${OSTYPE} in
 		;;
 esac
 
+<<<<<<< HEAD
 # alias
 alias ll='ls -alh'
+=======
+alias p3='python3'
+export GIT_EDITOR=vim
+>>>>>>> e6b2bf7f01ed178fe2bc99d3b38d0080a7dcb7e3
