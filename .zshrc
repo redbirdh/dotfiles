@@ -18,7 +18,7 @@ COLOR_4="%{[1;38;5;148m%}"
 COLOR_5="%{[1;38;5;032m%}"
 COLOR_END="%{[0m%}"
 # PROMPT="%{${fg_bold[green]}%}[zsh:%n] %c ▶ %{${reset_color}%}"
-PROMPT="${COLOR_BG}${COLOR_2}[zsh:%n]${COLOR_END}${COLOR_3} %c ${COLOR_1}▷ ${COLOR_END}"
+PROMPT="${COLOR_BG}${COLOR_2}[%n@%m]${COLOR_END}${COLOR_3} %c ${COLOR_1}▷ ${COLOR_END}"
 # RPROMPT="%{${fg[green]}%}[%~]%{${reset_color}%}"
 RPROMPT="%(?.${COLOR_4}.${COLOR_5})%(?!(^ω ^ )!(*_* %))${COLOR_END}"
 
