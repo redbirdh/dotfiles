@@ -37,6 +37,12 @@ case ${OSTYPE} in
 		;;
 esac
 
+case ${HOSTNAME} in
+    just-do-it*)
+        ./git_clone/screenFetch/screenfetch-dev
+        ;;
+esac
+
 # alias
 alias ll='ls -alh'
 alias p3='python3'

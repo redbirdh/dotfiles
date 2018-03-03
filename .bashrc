@@ -6,8 +6,4 @@ alias grep='grep --color'
 alias v='vim'
 alias py='python3'
 
-export PYENV_ROOT="~/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 archey
