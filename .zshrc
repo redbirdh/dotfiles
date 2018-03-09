@@ -44,6 +44,7 @@ case ${HOSTNAME} in
 esac
 
 # alias
-alias ll='ls -alh'
+alias ls='ls -F'
+alias ll='ls -FSalh'
 alias p3='python3'
 export GIT_EDITOR=vim
