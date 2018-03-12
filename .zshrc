@@ -28,23 +28,22 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' ignore-parents parent pwd ..
 
 case ${OSTYPE} in
-	darwin*)
-		export CLICOLOR=1
-		alias ls='ls -G -h'
-		;;
-	linux*)
-		alias ls='ls -F --color=auto'
-		;;
+    darwin* )
+        export CLICOLOR=1
+        alias ls='ls -G -h'
+        ;;
+    linux* )
+        alias ls='ls -F --color=auto'
+        ;;
 esac
 
 case ${HOSTNAME} in
-    just-do-it*)
-        ./git_clone/screenFetch/screenfetch-dev
+    "dental-style" )
+        ~/git_clone/screenFetch/screenfetch-dev
         ;;
 esac
 
 # alias
-alias ls='ls -F'
 alias ll='ls -FSalh'
 alias p3='python3'
 export GIT_EDITOR=vim

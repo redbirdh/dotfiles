@@ -9,3 +9,5 @@
 [https]
 [url "https://"]
 	insteadOf = git://
+[color]
+	ui = true
