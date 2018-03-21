@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/vim-material"]
 	path = .vim/bundle/vim-material
 	url = https://github.com/hzchirs/vim-material.git
+[submodule "sudo.vim"]
+	path = sudo.vim
+	url = git://github.com/vim-scripts/sudo.vim.git
