@@ -8,4 +8,5 @@
 [http]
 [https]
 [url "https://"]
-	insteadOf = git://
+[http]
+[https]
