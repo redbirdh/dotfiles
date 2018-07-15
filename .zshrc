@@ -31,6 +31,7 @@ case ${OSTYPE} in
     darwin* )
         export CLICOLOR=1
         alias ls='ls -G -h'
+        export PATH="/usr/local/bin:$PATH"
         ;;
     linux* )
         alias ls='ls -F --color=auto'

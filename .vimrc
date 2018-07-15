@@ -48,7 +48,7 @@ set smartindent
 set expandtab "タブをスペースにする
 set list "不可視文字を表示する
 set listchars=tab:»- "タブの可視化
-set listchars=trail:. "半角スペースの可視化
+"set listchars=trail:. "行末半角スペースの可視化
 " 不可視文字の内，tabとtrailのハイライトは以下の色になる
 hi SpecialKey guibg=NONE guifg=Gray40
 
@@ -75,7 +75,6 @@ endfor
 imap <expr> <TAB> pumvisible() ? "\<Down>" : "\<Tab>"
 
 " indentLineの設定
-let g:indentLine_color_term = 111
+let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#708090'
 let g:indentLine_char = '¦'
-
