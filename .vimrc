@@ -7,6 +7,8 @@ set noswapfile
 set autoread
 set hidden
 set showcmd
+" 下のバーにカーソルの位置表示
+set ruler
 
 " 見た目系
 syntax enable
@@ -19,7 +21,7 @@ if OSTYPE == "Darwin\n"
     "solarized用の設定
     set background=dark
     let g:solarized_termcolors=256
-    "let g:solarized_termtrans=1
+    " let g:solarized_termtrans=1
     colorscheme solarized
     " ここまで
 else
@@ -38,13 +40,16 @@ set laststatus=2
 set wildmode=list:longest
 
 " tab系
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=4 "ファイル上のタブ文字を見た目上何も自分にするか
+set shiftwidth=4 "自動インデントのときのスペース量
+set softtabstop=4 "tabキーを押したときに挿入されるスペース量
 set autoindent
 set smartindent
-set expandtab
-set list listchars=tab:\-\-
+set expandtab "タブをスペースにする
+set list "不可視文字を表示する
+set listchars=tab:»- "タブの可視化
+set listchars=trail:. "半角スペースの可視化
+" 不可視文字の内，tabとtrailのハイライトは以下の色になる
 hi SpecialKey guibg=NONE guifg=Gray40
 
 " 検索系
@@ -69,7 +74,8 @@ endfor
 
 imap <expr> <TAB> pumvisible() ? "\<Down>" : "\<Tab>"
 
-" indentLine
+" indentLineの設定
 let g:indentLine_color_term = 111
+let g:indentLine_color_gui = '#708090'
 let g:indentLine_char = '¦'
 
