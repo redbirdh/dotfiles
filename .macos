@@ -1,0 +1,50 @@
+#!/bin/bash
+
+if [ $(uname) != "Darwin" ] ; then
+	echo "Not macOS!"
+	exit 1
+fi
+
+###### Base ######
+# 自動大文字の無効化
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+# 時計アイコンクリック時にOSやホスト名ipを表示する
+sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+# Bluetoothヘッドフォン/ヘッドセットの音質を向上させる
+defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+
+
+##### Dock ######
+# Dockで開いているアプリケーションのインジケータライトを表示する
+defaults write com.apple.dock show-process-indicators -bool true
+
+
+###### Finde ######
+# デフォルトで隠しファイルを表示する
+defaults write com.apple.finder AppleShowAllFiles -bool true
+# ステータスバーを表示
+defaults write com.apple.finder ShowStatusBar -bool true
+# パスバーを表示
+defaults write com.apple.finder ShowPathbar -bool true
+# 名前で並べ替えを選択時にディレクトリを前に置くようにする
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+# 検索時にデフォルトでカレントディレクトリを検索
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+# 拡張子変更時の警告を無効化
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+# USBやネットワークストレージに.DS_Storeファイルを作成しない
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+# ボリュームマウント時に自動的にFinderを表示
+defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
+defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
+defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
+# Show the ~/Library folder
+chflags nohidden ~/Library
+# Show the /Volumes folder
+sudo chflags nohidden /Volumes
+
+
+###### Terminal ######
+# UTF-8のみを使用する
+defaults write com.apple.terminal StringEncodings -array 4

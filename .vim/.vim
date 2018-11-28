@@ -1,1 +1,1 @@
-/home/hiro/dotfiles/.vim
+/Users/skywalker/dotfiles/.vim

@@ -10,6 +10,9 @@ set showcmd
 " 下のバーにカーソルの位置表示
 set ruler
 
+" mac mojaveでvimでBSがきかないけんの対策
+set backspace=indent,eol,start
+
 " 見た目系
 syntax enable
 " solarized用の設定
