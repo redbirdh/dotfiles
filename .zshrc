@@ -62,3 +62,6 @@ RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 alias ll='ls -FSalh'
 alias p3='python3'
 export GIT_EDITOR=vim
+
+# 起動時
+archey
