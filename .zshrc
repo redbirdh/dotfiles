@@ -26,6 +26,7 @@ fpath=(path/to/zsh-completions/src $fpath)
 
 autoload -Uz compinit
 compinit
+zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' ignore-parents parent pwd ..
 
@@ -33,7 +34,8 @@ case ${OSTYPE} in
     darwin* )
         export CLICOLOR=1
         alias ls='ls -G -h'
-        export PATH="/usr/local/bin:$PATH"
+        export PATH="$PATH:/usr/local/bin"
+        export PATH="$PATH:~/.nodebrew/current/bin"
         ;;
     linux* )
         alias ls='ls -F --color=auto'
@@ -61,6 +63,8 @@ RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 # alias
 alias ll='ls -FSalh'
 alias p3='python3'
+alias ..2='cd ../..'
+alias ..3='cd ../../..'
 export GIT_EDITOR=vim
 
 # 起動時

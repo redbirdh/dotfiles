@@ -19,14 +19,13 @@ syntax enable
 set background=dark
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
-" ここまで
 if OSTYPE == "Darwin\n"
     "solarized用の設定
     set background=dark
     let g:solarized_termcolors=256
     " let g:solarized_termtrans=1
-    colorscheme solarized
-    " ここまで
+    "colorscheme solarized
+    colorscheme badwolf
 else
     colorscheme molokai
 endif
